@@ -1,0 +1,28 @@
+plugins {
+    id 'kotlin'
+    id 'kotlin-kapt'
+    id 'maven-publish'
+}
+
+dependencies {
+    implementation gradleApi() // 需要在 settings.gradle 设置 RepositoriesMode.PREFER_PROJECT
+    implementation localGroovy()
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'org.tq.plugin'
+            artifactId = 'plugin'
+            version = '1.0.0'
+
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            //输出路径
+            url  = parent.layout.projectDirectory.dir('repo') // settings.gradle 记得配置
+        }
+    }
+}
