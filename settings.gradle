@@ -23,3 +23,5 @@ dependencyResolutionManagement {
 rootProject.name = "PluginProject"
 include ':app'
 include ':Plugin'
+include ':router-annotations'
+include ':router-processor'

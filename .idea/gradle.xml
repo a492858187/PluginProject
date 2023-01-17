@@ -7,13 +7,15 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:/Android/gradle-6.5" />
-        <option name="gradleJvm" value="Embedded JDK" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../Android/gradle-6.5" />
+        <option name="gradleJvm" value="Android Studio java home" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Plugin" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/router-annotations" />
+            <option value="$PROJECT_DIR$/router-processor" />
           </set>
         </option>
       </GradleProjectSettings>
