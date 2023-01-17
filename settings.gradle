@@ -25,3 +25,7 @@ include ':app'
 include ':Plugin'
 include ':router-annotations'
 include ':router-processor'
+
+gradle.taskGraph.beforeTask { task ->
+    println("[all-task]: $task.name")
+}

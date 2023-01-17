@@ -33,6 +33,12 @@ public class DestinationProcessor extends AbstractProcessor {
         }
         System.out.println(TAG + ">>> process start ...");
 
+        String rootDir = processingEnv.getOptions().get("root_project_dir");
+        if(rootDir != null){
+            System.out.println(TAG + "rootDir: " + rootDir);
+            return false;
+        }
+
         Set<Element> allDestinationElements = (Set<Element>) roundEnv.getElementsAnnotatedWith(Destination.class);
         System.out.println(TAG + ">>> all Destination elements count = " + allDestinationElements.size());
         if(allDestinationElements.size() < 1) {

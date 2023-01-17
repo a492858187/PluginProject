@@ -1,6 +1,6 @@
 plugins {
-    id 'kotlin'
-    id 'kotlin-kapt'
+    id 'java'
+    id 'groovy'
     id 'maven-publish'
 }
 
@@ -14,7 +14,7 @@ publishing {
         mavenJava(MavenPublication) {
             groupId = 'org.tq.plugin'
             artifactId = 'plugin'
-            version = '1.0.0'
+            version = '1.0.1'
 
             from components.java
         }
