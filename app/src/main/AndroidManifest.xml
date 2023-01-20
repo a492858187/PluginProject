@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -25,6 +26,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <provider android:name="org.tq.anchors.StartupProvider"
+            android:authorities="${applicationId}.android_startup"
+            android:exported="false">
+            <meta-data
+                android:name="org.tq.pluginproject.startup.Task5"
+                android:value="android.startup"/>
+        </provider>
     </application>
 
 </manifest>

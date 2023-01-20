@@ -47,4 +47,6 @@ dependencies {
 
     implementation project(':router-annotations')
     kapt project(':router-processor')
+
+    implementation project(':anchors')
 }

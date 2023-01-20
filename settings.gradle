@@ -29,3 +29,4 @@ include ':router-processor'
 gradle.taskGraph.beforeTask { task ->
     println("[all-task]: $task.name")
 }
+include ':anchors'
